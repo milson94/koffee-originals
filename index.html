@@ -13,9 +13,14 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Koffee Originals</h1>
+                <img src="images/logo.png" alt="Koffee Originals Logo">
             </div>
-            <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="issues.html">Latest Issues</a></li>
@@ -26,11 +31,22 @@
         </div>
     </header>
 
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="issues.html">Latest Issues</a></li>
+                <li><a href="authors.html">Our Creators</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <main>
         <section class="hero-section">
             <div class="container">
                 <h2>Unlock Infinite Universes</h2>
-                <p>Dive into the thrilling narratives, stunning artwork, and unforgettable characters from Koffee Originals Magazine.</p>
+                <p>Dive deep into the heart of extraordinary sagas, where stunning visuals meet gripping tales. Koffee Originals brings you a curated collection of mind-bending sci-fi, epic fantasy, and thrilling adventures. Uncover new heroes, confront formidable villains, and explore worlds beyond imagination.</p>
                 <a href="subscribe.html" class="btn primary-btn">Subscribe Now</a>
             </div>
         </section>
@@ -38,19 +54,16 @@
         <section class="info-section">
             <div class="container">
                 <div class="info-card">
-                    <!-- Changed to local image: Cyberpunk-Shadows for "Future Visions" -->
                     <img src="images/Cyberpunk-Shadows.jpg" alt="Future Cityscape">
                     <h3>Future Visions</h3>
                     <p>Explore groundbreaking sci-fi epics and dystopian futures.</p>
                 </div>
                 <div class="info-card">
-                    <!-- Changed to local image: Galactic-Guardians for "Meet the Heroes" -->
                     <img src="images/Galactic-Guardians.jpg" alt="Group of Heroes">
                     <h3>Meet the Heroes</h3>
                     <p>Get to know the mighty heroes and cunning villains within our pages.</p>
                 </div>
                 <div class="info-card">
-                    <!-- Changed to local image: Quantum-Leap for "Artistry & Design" -->
                     <img src="images/Quantum-Leap.jpg" alt="Comic Book Panel Art">
                     <h3>Artistry & Design</h3>
                     <p>Appreciate the breathtaking art that brings these worlds to life.</p>
@@ -63,27 +76,28 @@
                 <h2>Featured Series</h2>
                 <div class="slider-container" id="featured-slider">
                     <div class="slider-wrapper">
-                        <div class="slide-item">
+                        <!-- Added data-comic-id to each slide-item -->
+                        <div class="slide-item" data-comic-id="galactic-guardians">
                             <img src="images/Galactic-Guardians.jpg" alt="Galactic Guardians Comic Cover">
                             <h3>Galactic Guardians</h3>
                             <p>Issue #7: The Cosmic Nexus</p>
                         </div>
-                        <div class="slide-item">
+                        <div class="slide-item" data-comic-id="chronos-rangers">
                             <img src="images/Chronos-Rangers.jpg" alt="Chronos Rangers Comic Cover">
                             <h3>Chronos Rangers</h3>
                             <p>Vol. 3: Echoes of Time</p>
                         </div>
-                        <div class="slide-item">
+                        <div class="slide-item" data-comic-id="aether-knights">
                             <img src="images/Aether-Knights.jpg" alt="Aether Knights Comic Cover">
                             <h3>Aether Knights</h3>
                             <p>First Flight: A New Era</p>
                         </div>
-                        <div class="slide-item">
+                        <div class="slide-item" data-comic-id="void-wanderers">
                             <img src="images/Void-Wanderers.jpg" alt="Void Wanderers Comic Cover">
                             <h3>Void Wanderers</h3>
                             <p>The Whispers of Xylos</p>
                         </div>
-                         <div class="slide-item">
+                         <div class="slide-item" data-comic-id="cyberpunk-shadows">
                             <img src="images/Cyberpunk-Shadows.jpg" alt="Cyberpunk Shadows Comic Cover">
                             <h3>Cyberpunk Shadows</h3>
                             <p>Origin Story: Neo-Tokyo</p>
@@ -100,31 +114,28 @@
                 <h2>New Releases</h2>
                 <div class="slider-container" id="new-releases-slider">
                     <div class="slider-wrapper">
-                        <div class="slide-item">
+                        <!-- Added data-comic-id to each slide-item -->
+                        <div class="slide-item" data-comic-id="quantum-leap">
                             <img src="images/Quantum-Leap.jpg" alt="Quantum Leap Comic Cover">
                             <h3>Quantum Leap</h3>
                             <p>One-Shot Special</p>
                         </div>
-                        <div class="slide-item">
-                            <!-- Re-using Aether Knights for a new release -->
+                        <div class="slide-item" data-comic-id="aether-knights">
                             <img src="images/Aether-Knights.jpg" alt="Aether Knights New Release">
                             <h3>Aether Knights</h3>
                             <p>New Series Debut!</p>
                         </div>
-                        <div class="slide-item">
-                            <!-- Re-using Chronos Rangers for a new release -->
+                        <div class="slide-item" data-comic-id="chronos-rangers">
                             <img src="images/Chronos-Rangers.jpg" alt="Chronos Rangers New Release">
                             <h3>Chronos Rangers</h3>
                             <p>Galactic Storm</p>
                         </div>
-                        <div class="slide-item">
-                            <!-- Re-using Galactic Guardians for a new release -->
+                        <div class="slide-item" data-comic-id="galactic-guardians">
                             <img src="images/Galactic-Guardians.jpg" alt="Galactic Guardians New Release">
                             <h3>Galactic Guardians</h3>
                             <p>The Oracle's Call</p>
                         </div>
-                         <div class="slide-item">
-                            <!-- Re-using Void Wanderers for a new release -->
+                         <div class="slide-item" data-comic-id="void-wanderers">
                             <img src="images/Void-Wanderers.jpg" alt="Void Wanderers New Release">
                             <h3>Void Wanderers</h3>
                             <p>Final Issue!</p>
@@ -148,6 +159,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Comic Detail Modal Structure -->
+    <div id="comicModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" aria-label="Close modal">×</span>
+            <div class="modal-bg-image"></div>
+            <div class="modal-overlay-dark"></div>
+            <div class="modal-text-content">
+                <h3 id="modalComicTitle"></h3>
+                <p id="modalComicSummary"></p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js" defer></script>
 </body>

@@ -11,9 +11,14 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Koffee Originals</h1>
+                <img src="images/logo.png" alt="Koffee Originals Logo">
             </div>
-            <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="issues.html" class="active">Latest Issues</a></li>
@@ -23,6 +28,18 @@
             </nav>
         </div>
     </header>
+
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="issues.html" class="active">Latest Issues</a></li>
+                <li><a href="authors.html">Our Creators</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <main class="page-content">
         <div class="container">
             <h2>Our Latest Issues</h2>
@@ -40,5 +57,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
